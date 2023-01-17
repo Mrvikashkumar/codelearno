@@ -108,6 +108,9 @@
   aside .container{
     width: 100%;
   }
+  .close-sidebar{
+    display: block;
+  }
   .faq-content{
     grid-template-columns: 1fr;
   }

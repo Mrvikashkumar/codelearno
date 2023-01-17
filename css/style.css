@@ -200,6 +200,7 @@ aside .logo-text{
   top: 2rem;
   right: 2rem;
   cursor: pointer;
+  display: none;
 }
 .close-sidebar i{
   color: var(--color-white);
@@ -308,6 +309,7 @@ section#categories{
 section#popular-course{
   margin-top: 20rem;
   text-align: center;
+  overflow-x: hidden;
 }
 .course-heading{
   transform: translateX(-100%);
@@ -348,6 +350,7 @@ section#popular-course{
 /* FAQ Section */
 section#faq{
   padding: 7rem 0 4rem;
+  overflow-x: hidden;
 }
 .faq-heading{
   text-align: center;
