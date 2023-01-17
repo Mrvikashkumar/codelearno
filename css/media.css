@@ -1,0 +1,128 @@
+@media screen and (max-width: 1086px) {
+  .menu-container-l0{
+    background-color: var(--color-primary);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* padding: 1rem; */
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 800ms, opacity 400ms;
+    z-index: 99;
+  }
+  nav:hover .menu-container-l0{
+    /* top: 100%; */
+    opacity: 1;
+    padding: 1rem;
+    /* opacity: 0; */
+    height: auto;
+  }
+  .search-container{
+    margin-left: auto;
+  }
+}
+
+/* media query on max-width 850px */
+@media screen and (max-width: 850px) {
+  header{
+    height: auto;
+  }
+  header .container{
+    flex-direction: column;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    padding-top: 4rem;
+  }
+  .header-text h1{
+    font-size: 4rem;
+  }
+  .header-img{
+    max-width: 500px;
+  }
+  section#categories{
+    margin: 2rem 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #categories .container{
+    grid-template-columns: 90%;
+    justify-content: center;
+    height: auto;
+    gap: 3rem;
+    text-align: center;
+  }
+  section#popular-course{
+    margin-top: 3rem;
+  }
+  .courses{
+    gap: .5rem;
+  }
+  .write-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .write-btn span{
+    display: none;
+  }
+  .testimonial{
+    min-width: calc(100% / 1.5);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  aside .container{
+    width: 300px;
+  }
+  .category-container{
+    grid-template-columns: 1fr 1fr;
+  }
+  .testimonial-head{
+    justify-content: center;
+    text-align: center;
+  }
+  .testimonial{
+    min-width: calc(100% - 1rem);
+  }
+  .write-btn{
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 9;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav .logo-text{
+    display: none;
+  }
+  aside{
+    z-index: 999999;
+  }
+  aside .container{
+    width: 100%;
+  }
+  .faq-content{
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 350px) {
+  aside .container .pages{
+    align-items: center;
+  }
+  aside .container .pages .page{
+    width: 100%;
+  }
+  aside .logo-text{
+    display: none;
+  }
+  .category-container{
+    grid-template-columns: 1fr;
+  }
+}

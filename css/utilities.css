@@ -1,0 +1,109 @@
+/* import google font */
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:wght@300;400;500;600&family=Roboto+Condensed:wght@400;700&display=swap');
+/* font-family: 'Cookie', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
+
+/* default style */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+/* variable */
+:root{
+  --color-primary: #6c63ff;
+  --color-success: #00bf8e;
+  --color-warning: #f7c94b;
+  --color-danger: #f75842;
+  --color-danger-variant: rgba(247, 88, 66, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, .7);
+  --color-black: #000;
+  --color-bg: #1f2641;
+  --color-bg1: #2e3267;
+  --color-bg2: #424890;
+  --color-hover: #3229e677;
+
+  --container-width-lg: 76%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
+
+  --transition: all 400ms ease;
+
+}
+html{
+  font-size: 0.625rem;
+}
+body{
+  width: 100vw;
+  background-color: var(--color-bg);
+  position: relative;
+  overflow-x: hidden;
+}
+section{
+  width: 100%;
+}
+hr{
+  border: 1px solid var(--color-bg2);
+}
+a{
+  text-decoration: none;
+  color: var(--color-black);
+}
+ul{
+  list-style: none;
+}
+a, p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Roboto Condensed', sans-serif;
+  color: var(--color-white);
+}
+h1{
+  font-size: 4rem;
+}
+h2{
+  font-size: 3.5rem;
+}
+h4{
+  font-size: 1.5rem;
+}
+p{
+  font-size: 1.5rem;
+  color: var(--color-light);
+}
+img{
+  width: 100%;
+}
+/* common classes */
+.container{
+  /* max-width: var(--container-width-lg); */
+  max-width: 1200px;
+  width: 95%;
+  margin-inline: auto;
+  /* background-color: var(--color-bg); */
+}
+.d-flex{
+  display: flex;
+}
+.align-center{
+  align-items: center;
+}
+.justify-center{
+  justify-content: center;
+}
+.justify-space-between{
+  justify-content: space-between;
+}
+.btn{
+  display: inline-block;
+  color: var(--color-white);
+  font-size: 1.6rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
